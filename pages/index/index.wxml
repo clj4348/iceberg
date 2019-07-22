@@ -1,0 +1,28 @@
+<view class="container">
+  <view class="header-container">
+    <v-episode num="{{num}}"/>
+    <!-- 喜欢组件 -->
+	  <v-like likeStatus="{{islikeStatus}}"
+      favNums="{{favorNum}}"
+      bind:like="onChangeLikeStatus"/>
+  </view>
+  <v-movie wx:if="{{classic.type === 100}}"
+    imgUrl="{{classic.image}}"
+    content="{{classic.content}}"/>
+  <!-- 音乐组件 -->
+  <v-music wx:if="{{classic.type === 200}}"
+    imgUrl="{{classic.image}}"
+    title="{{classic.title}}"
+    musicUrl="{{classic.url}}"
+    content="{{classic.content}}"/>
+  <v-essay wx:if="{{classic.type === 300}}" 
+    imgUrl="{{classic.image}}"
+    content="{{classic.content}}"/>
+  <v-navi class="navi"
+    newNumber="{{newIndex}}" 
+    title="{{classic.title}}"
+    bind:next="onNext"
+    bind:previous ="onPrevious"
+    index="{{classic.index}}"/>
+</view>
+

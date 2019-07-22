@@ -1,0 +1,16 @@
+.container{
+  width: 70rpx;
+  position: relative;
+}
+.like-img{
+  display: block;
+  width: 32rpx;
+  height: 28rpx;
+}
+.like-tips{
+  position: absolute;
+  font-size: 18rpx;
+  color: #bbb;
+  left: 40rpx;
+  top: -10rpx;
+}

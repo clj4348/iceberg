@@ -1,0 +1,25 @@
+@import '../common.wxss';
+.banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500rpx;
+} 
+.music-con{
+  position: relative;
+  width: 420rpx;
+  height: 420rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.player{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: block;
+  width: 110rpx;
+  height: 110rpx;
+  margin: auto;
+  transform: translateY(-50%);
+}

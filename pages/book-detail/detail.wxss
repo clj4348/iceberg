@@ -1,0 +1,77 @@
+.detail-container{
+  background: #f2f2f2;
+}
+.book-content{
+  display: flex;
+  padding:40rpx 0;
+  background: #fff;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-image{
+  width: 200rpx;
+  height: 300rpx;
+  box-shadow: 3px 3px 10px rgba(100,100,100,.2)
+}
+
+.book-title{
+  font-size: 38rpx;
+  font-weight: 600;
+  color: #2f2f2f;
+  margin-top: 28rpx;
+}
+.book-author{
+  font-size: 32rpx;
+  color: #999;
+  margin-top: 10rpx;
+}
+
+.line-content{
+  padding:30rpx;
+  background: #fff;
+  margin-top: 30rpx;
+}
+.line-title{
+  font-size: 30rpx;
+  font-weight: 600;
+  margin-bottom: 20rpx;
+  text-align: center;
+}
+
+.comment-list v-tag:nth-child(1) view{
+  background:#fffbdd; 
+}
+.comment-list v-tag:nth-child(2) view{
+  background:#eefbff; 
+}
+.tag{
+  margin-left: 10rpx;
+  font-size: 22rpx;
+  color: #aaa;
+}
+.content{
+  display: block;
+  text-indent: 56rpx;
+  font-size: 28rpx;
+  color: #666;
+  font-weight: 500;
+}
+.book-flex{
+  display: flex;
+}
+.book-item text{
+  display: block;
+  font-size: 28rpx;
+  margin-bottom: 10rpx;
+  color: #999;
+}
+.book-msg text{
+  display: block;
+  font-size: 28rpx;
+  margin-bottom: 10rpx;
+  color: #2f2f2f;
+}
+.book-item{
+  margin-right: 40rpx;
+}

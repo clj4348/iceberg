@@ -1,0 +1,39 @@
+<wxs src="../../utils/fitter.wxs" module="fitter"/>
+<view class="detail-container">
+  <view class="book-content">  
+    <image class="book-image" src="{{bookData.image}}" />
+    <text class="book-title">{{bookData.title}}</text>
+    <text class="book-author">{{bookData.author[0]}}</text>
+  </view>
+  <view class="line-content">
+    <view class="line-title">短语</view>
+    <view class="comment-list">
+      <v-tag wx:for="{{comment}}" tagText="{{item.content}}" wx:key="{{item.content}}">
+        <text class="tag" slot="after">{{'+'+item.nums}}</text>
+      </v-tag>
+    </view>
+  </view>
+   <view class="line-content">
+    <view class="line-title">内容简介</view>
+    <text decode="{{true}}" class="content">{{fitter.format(bookData.summary)}}</text>
+  </view>
+  <view class="line-content">
+    <view class="line-title">书本信息</view>
+    <view class="book-flex">
+      <view class="book-item">
+        <text>出版社</text>
+        <text>出版年</text>
+        <text>页数</text>
+        <text>定价</text>
+        <text>装帧</text>
+      </view>
+      <view class="book-msg">
+        <text>{{bookData.publisher}}</text>
+        <text>{{bookData.pubdate}}</text>
+        <text>{{bookData.pages}}</text>
+        <text>{{bookData.price}}</text>
+        <text>{{bookData.binding}}</text>
+      </view>
+    </view>
+  </view>
+</view>

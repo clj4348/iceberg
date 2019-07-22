@@ -1,0 +1,5 @@
+<view class="navi-container">
+  <image bindtap="onPrev" class="nav-icon" src="{{index >= newNumber ? prevDis : prevAct}}"/>
+  <text class="title">{{title}}</text>
+  <image bindtap="onNext" class="nav-icon" src="{{index > 1 ? nextAct : nextDis}}"/>
+</view>

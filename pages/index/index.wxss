@@ -1,0 +1,18 @@
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+	box-sizing: border-box;
+	background: #fff;
+	height: 100rpx;
+	width: 100%;
+	padding:0 30rpx;
+}
+.navi{
+  position: absolute;
+  bottom: 40rpx;
+  left: 0;
+  right: 0;
+  width: 600rpx;
+  margin: auto;
+}

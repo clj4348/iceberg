@@ -1,0 +1,4 @@
+<view class="container">
+  <image bindtap="changeLikeStatus" class="like-img" src="{{likeStatus === 1 ? like : dislike}}"/>
+  <text class="like-tips">{{favNums}}</text>
+</view>

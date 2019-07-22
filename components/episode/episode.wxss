@@ -1,0 +1,53 @@
+.order-container{
+	display: flex;
+	flex-direction: row;
+	width: 190rpx;
+	height: 50rpx;
+	justify-content: space-between;
+}
+
+.num-order-con{
+	position: relative;
+	height: 100%;
+	padding-right: 14rpx;
+}
+
+.order-line{
+	position: absolute;
+	display: block;
+	height: 100%;
+	right: 0rpx;
+	top: 0rpx;
+	width: 2px;
+	background: #010101;
+}
+
+.order-no{
+	font-size: 32rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+
+.order-num{
+	font-size: 58rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+
+.date-content{
+  display: flex;
+  margin-left: 14rpx;
+  height: 50rpx;
+  flex-direction: column;
+}
+
+.date-month{
+  font-size: 24rpx;
+  width: 50rpx;
+  line-height: 24rpx;
+}
+.date-year{
+  font-size: 20rpx;
+  line-height: 24rpx;
+  margin-top: 4rpx;
+}

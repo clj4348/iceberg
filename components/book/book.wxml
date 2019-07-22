@@ -1,0 +1,9 @@
+<view class="book-components" bindtap="onTapDetail">
+  <image class="book-image" src="{{book.image}}"></image>
+  <view class="book-text">
+    <text class="title">{{book.title}}</text>
+    <text class="author">{{book.author}}</text>
+    <text class="favor">{{book.fav_nums}}喜欢</text>
+  </view>
+</view>
+

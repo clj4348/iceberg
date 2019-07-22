@@ -1,0 +1,10 @@
+<view class="classic-container">
+  <view class="banner">
+    <view class="music-con">
+      <image bindtap="playBtn" class="player" src="{{isPlayMusic ? pause : play}}" />
+      <image class="classic-image" src="{{imgUrl}}" />
+    </view>
+    <image class="tag" src="./images/music@tag.png"/>
+  </view>
+  <text class="content">{{content}}</text>
+</view>
